@@ -5,9 +5,25 @@ import org.junit.Test;
 
 public class CalculatorTest {
 
+    Calculator c = new Calculator();
+
     @Test
     public void testAdd() {
-        Calculator calculator = new Calculator();
-        assertEquals(10, calculator.add(5, 5));
+        assertEquals(10, c.add(5, 5));
+    }
+
+    @Test
+    public void testSubtract() {
+        assertEquals(5, c.subtract(10, 5));
+    }
+
+    @Test
+    public void testMultiply() {
+        assertEquals(20, c.multiply(4, 5));
+    }
+
+    @Test
+    public void testDivide() {
+        assertEquals(5, c.divide(10, 2));
     }
 }
