@@ -1,0 +1,27 @@
+<div class="home-container">
+
+  <h1>{{ portalName }}</h1>
+
+  <button [disabled]="isPortalActive">
+    Enroll Now
+  </button>
+
+  <br><br>
+
+  <button (click)="onEnrollClick()">
+    Open Enrollment
+  </button>
+
+  <p>{{ message }}</p>
+
+  <br>
+
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Search course"
+  >
+
+  <p>Searching for: {{ searchTerm }}</p>
+
+</div>

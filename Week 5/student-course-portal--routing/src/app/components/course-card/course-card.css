@@ -1,0 +1,7 @@
+.card-enrolled {
+  background-color: lightgreen;
+}
+
+.card-full {
+  border: 2px solid red;
+}
